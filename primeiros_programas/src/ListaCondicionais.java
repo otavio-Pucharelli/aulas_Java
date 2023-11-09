@@ -91,21 +91,44 @@ public class ListaCondicionais {
 
         double total;
 
-        if (codigo == 1) {
-            total = quantidade * 4.00;
-        } else if (codigo == 2) {
-            total = quantidade * 4.50;
-        } else if (codigo == 3) {
-            total = quantidade * 5.00;
-        } else if (codigo == 4) {
-            total = quantidade * 2.00;
-        } else {
-            total = quantidade * 1.50;
+        switch (codigo) {
+            case 1:
+                total = quantidade * 4.00;
+                System.out.printf("Total: R$ %.2f%n", total);
+                break;
+            case 2:
+                total = quantidade * 4.50;
+                System.out.printf("Total: R$ %.2f%n", total);
+                break;
+            case 3:
+                total = quantidade * 5.00;
+                System.out.printf("Total: R$ %.2f%n", total);
+                break;
+            case 4:
+                total = quantidade * 2.00;
+                System.out.printf("Total: R$ %.2f%n", total);
+                break;
+            case 5:
+                total = quantidade * 1.50;
+                System.out.printf("Total: R$ %.2f%n", total);
+                break;
+            default:
+                break;
         }
-
-        System.out.printf("Total: R$ %.2f%n", total);
-
+        
         sc.close();
+        
+        // if (codigo == 1) {
+        //     total = quantidade * 4.00;
+        // } else if (codigo == 2) {
+        //     total = quantidade * 4.50;
+        // } else if (codigo == 3) {
+        //     total = quantidade * 5.00;
+        // } else if (codigo == 4) {
+        //     total = quantidade * 2.00;
+        // } else {
+        //     total = quantidade * 1.50;
+        // }
     }
 
     public static void exercio6(){
@@ -168,6 +191,8 @@ public class ListaCondicionais {
         }
 
         System.out.println("R$ " + imposto);
+
+        sc.close();
 
     }
 }

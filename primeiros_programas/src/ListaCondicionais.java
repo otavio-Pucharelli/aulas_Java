@@ -97,27 +97,25 @@ public class ListaCondicionais {
         switch (codigo) {
             case 1:
                 total = quantidade * 4.00;
-                System.out.printf("Total: R$ %.2f%n", total);
                 break;
             case 2:
                 total = quantidade * 4.50;
-                System.out.printf("Total: R$ %.2f%n", total);
                 break;
             case 3:
                 total = quantidade * 5.00;
-                System.out.printf("Total: R$ %.2f%n", total);
                 break;
             case 4:
                 total = quantidade * 2.00;
-                System.out.printf("Total: R$ %.2f%n", total);
                 break;
             case 5:
                 total = quantidade * 1.50;
-                System.out.printf("Total: R$ %.2f%n", total);
                 break;
             default:
+                total = 0;
                 break;
         }
+
+        System.out.printf("Total: R$ %.2f%n", total);
         
         sc.close();
         

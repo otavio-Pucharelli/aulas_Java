@@ -24,12 +24,15 @@ public class ListaCondicionais {
         Scanner sc = new Scanner(System.in);
 
         int x = sc.nextInt();
+        String resultado = (x < 0)? "NEGATIVO" : "POSITIVO";
 
-        if (x < 0) {
-            System.out.println("NEGATIVO");
-        } else {
-            System.out.println("POSITIVO");
-        }
+        System.out.println(resultado);
+
+        // if (x < 0) {
+        //     System.out.println("NEGATIVO");
+        // } else {
+        //     System.out.println("POSITIVO");
+        // }
 
         sc.close();
     }

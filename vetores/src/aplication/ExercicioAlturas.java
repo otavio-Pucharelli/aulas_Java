@@ -27,18 +27,18 @@ public class ExercicioAlturas {
 
         for( int x : idades) {
             if (x < 16){
-                somaIdadesMenorDezeseis += x;
+                somaIdadesMenorDezeseis ++;
             } 
         }
 
         alturaMedia = somaAltura / n;
-        porcentagemIdadesMenorDezeseis = (double)(somaIdadesMenorDezeseis / n) / 100;
+        porcentagemIdadesMenorDezeseis = (double)(somaIdadesMenorDezeseis * 100) / n;
 
         System.out.println("Altura média: " + alturaMedia);
         System.out.println("Pessoas com menos de 16 anos: " + porcentagemIdadesMenorDezeseis + "%");
 
-        for (int x: idades) {
-            if (x < 16) {
+        for (int x = 0; x < n; x++) {
+            if (idades[x] < 16) {
                 System.out.println("Nome: " + nomes[x]);
             }
         }
